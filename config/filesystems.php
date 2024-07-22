@@ -29,7 +29,20 @@ return [
     */
 
     'disks' => [
+        
+        //Configuracion simple de admin
+        // 'admin' => [
+        //     'driver' => 'local',
+        //     'root' => storage_path('app'),
+        // ],
 
+        //Admin para poder trabajar con imagenes
+        'admin' => [
+            'driver' => 'local',
+            'root' => public_path('uploads'),
+            'visibility' => 'storage',
+            'url' => env('APP_URL').'/uploads',
+        ],
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),

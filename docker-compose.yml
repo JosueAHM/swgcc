@@ -39,8 +39,8 @@ services:
     container_name: app
     ports:
       - "1080:80"
-    # volumes:
-    #   - .:/var/www/html
+    volumes:
+      - .:/var/www/html
     environment:
       - APP_ENV=${APP_ENV}
       - APP_DEBUG=${APP_DEBUG}
@@ -58,5 +58,5 @@ services:
 networks:
   net:
 
-# volumes:
-#   dbdata:
+volumes:
+  dbdata:

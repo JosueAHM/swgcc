@@ -18,11 +18,18 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'cedula',
         'name',
+        'phone',
         'email',
-        'password',
+        'status',
+        'author',
+        'id_admin_role',
     ];
-
+    // public function get_role_name()
+    // {
+    //     return $this->hasOne(Role::class, 'id', 'id_admin_role');
+    // }
     /**
      * The attributes that should be hidden for serialization.
      *
