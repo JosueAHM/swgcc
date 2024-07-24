@@ -14,9 +14,6 @@ Route::group([
     'middleware'    => config('admin.route.middleware'),
     'as'            => config('admin.route.prefix') . '.',
 ], function (Router $router) {
-    Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
-    Route::post('login', [AuthController::class, 'login']);
-    Route::post('logout', [AuthController::class, 'logout'])->name('logout');
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('gestionar-docentes', DocentesController::class);
     $router->resource('gestionar-estudiante', EstudiantesController::class);
