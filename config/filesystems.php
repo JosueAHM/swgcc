@@ -40,7 +40,7 @@ return [
         'admin' => [
             'driver' => 'local',
             'root' => public_path('uploads'),
-            'visibility' => 'storage',
+            'visibility' => 'public',
             'url' => env('APP_URL').'/uploads',
         ],
         'local' => [
