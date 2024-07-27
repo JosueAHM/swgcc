@@ -21,9 +21,10 @@ Route::group([
     $router->resource('gestionar-estudiante', EstudiantesController::class);
     $router->resource('gestionar-mis-archivos', ArchivosController::class);
     $router->resource('tipos-recursos', TipoRecursoController::class);
+    // $router->resource('gestionar-cursos', CursosController::class);
     $router->get('/gestionar-cursos', 'CursosController@index')->name('Cursos');
-    
-    // $router->get('/gestionar-mis-recursos', function () {
-    //     return view('recursos');
-    // })->name('recursos');
+
+    // $router->get('/gestionar-cursos', function () {
+    //     return view('cursos');
+    // })->name('cursos');
 });

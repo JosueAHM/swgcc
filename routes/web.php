@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Admin\Controllers\CursosController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//Funciones para llamar elementos de un controller de open admin 
+Route::get('admin/recursos/{id}', [CursosController::class, 'detail'])->name('admin.recursos.show');

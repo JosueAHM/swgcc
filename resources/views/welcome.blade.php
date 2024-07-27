@@ -16,6 +16,7 @@
         </style>
     </head>
     <body class="antialiased">
+        <h1>SWGCC</h1>
         <div id="app"></div>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </body>

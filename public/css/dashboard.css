@@ -1,0 +1,23 @@
+/* En public/css/dashboard.css o resources/css/dashboard.css */
+.card-body {
+    font-size: 12px;
+    color: #333;
+}
+
+.card-title {
+    font-size: 14px !important;
+}
+.box-image {
+    height: 10rem; /* Altura fija para la imagen */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    margin-bottom: 10px; /* Espacio entre la imagen y el contenido del box */
+    position: relative; /* Para usar posicionamiento relativo */
+}
+
+.box-image img {
+    width: 100%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    position: absolute; /* Posiciona la imagen en relación con el contenedor */
+    top: 0; /* Alinea la imagen en la parte superior del contenedor */
+    left: 0; /* Alinea la imagen a la izquierda del contenedor */
+}
