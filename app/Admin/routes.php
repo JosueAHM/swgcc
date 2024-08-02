@@ -19,10 +19,10 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('gestionar-docentes', DocentesController::class);
     $router->resource('gestionar-estudiante', EstudiantesController::class);
-    $router->resource('gestionar-mis-archivos', ArchivosController::class);
+    $router->get('/gestionar-mis-archivos', 'ArchivosController@index')->name('Recursos');
     $router->resource('tipos-recursos', TipoRecursoController::class);
-    // $router->resource('gestionar-cursos', CursosController::class);
-    $router->get('/gestionar-cursos', 'CursosController@index')->name('Cursos');
+    // $router->get('/gestionar-cursos', 'CursosController@index')->name('Cursos');
+    $router->resource('gestionar-cursos', CursosController::class);
 
     // $router->get('/gestionar-cursos', function () {
     //     return view('cursos');
